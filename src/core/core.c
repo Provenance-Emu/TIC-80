@@ -38,13 +38,19 @@
 #include <3ds.h>
 #endif
 
-static_assert(TIC_BANK_BITS == 3,                   "tic_bank_bits");
-static_assert(sizeof(tic_map) < 1024 * 32,          "tic_map");
-static_assert(sizeof(tic_rgb) == 3,    "tic_rgb");
-static_assert(sizeof(tic_palette) == 48,    "tic_palette");
-static_assert(sizeof(((tic_vram *)0)->vars) == 4, "tic_vram vars");
-static_assert(sizeof(tic_vram) == TIC_VRAM_SIZE,    "tic_vram");
-static_assert(sizeof(tic_ram) == TIC_RAM_SIZE,      "tic_ram");
+//static_assert(TIC_BANK_BITS == 3,                   "tic_bank_bits");
+//static_assert(sizeof(tic_map) < 1024 * 32,          "tic_map");
+//static_assert(sizeof(tic_rgb) == 3,    "tic_rgb");
+//static_assert(sizeof(tic_palette) == 48,    "tic_palette");
+//static_assert(sizeof(((tic_vram *)0)->vars) == 4, "tic_vram vars");
+//static_assert(sizeof(tic_vram) == TIC_VRAM_SIZE,    "tic_vram");
+//static_assert(sizeof(tic_ram) == TIC_RAM_SIZE,      "tic_ram");;
+//static_assert(sizeof(tic_map) < 1024 * 32,          "tic_map");
+//static_assert(sizeof(tic_rgb) == 3,    "tic_rgb");
+//static_assert(sizeof(tic_palette) == 48,    "tic_palette");
+//static_assert(sizeof(((tic_vram *)0)->vars) == 4, "tic_vram vars");
+//static_assert(sizeof(tic_vram) == TIC_VRAM_SIZE,    "tic_vram");
+//static_assert(sizeof(tic_ram) == TIC_RAM_SIZE,      "tic_ram");
 
 u8 tic_api_peek(tic_mem* memory, s32 address, s32 bits)
 {
